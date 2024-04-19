@@ -85,12 +85,6 @@ button:hover {
     border: none;
 }
 
-.header__para {
-    color: #243e63;
-    font-size: 18px;
-
-}
-
 
 .nav__link--primary {
     background-color: #6415ff;
@@ -138,25 +132,35 @@ button:hover {
     font-size: 14px;
     font-weight: bold;
     color: #243e63;
-
+    
 }
 
 
 .nav__link--anchor {
     padding: 0 32px;
-
+    
 }
 
 
 .nav__links--container {
     margin: right;
-
+    
 }
 
 
+.header__para {
+    color: #243e63;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+/* .header_para {
+    line-height: 30px;
+} */
 
 
-/* HEADER */
+/* ------  HEADER ------- */
 
 
 .header__container {
@@ -174,6 +178,7 @@ button:hover {
 
 
 .header__input {
+    width: 100%;
     font-size: 16px;
     font-weight: 700;
     padding: 12px 24px;
@@ -200,17 +205,28 @@ button:hover {
 }
 
 
-/* FEATURES SERVICES SECTION */
 
-.header_para {
-    line-height: 30px;
-}
+
+/* ------ FEATURES SERVICES SECTION ------ */
+
 
 .title {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.services__para {
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #7c8ba1;
+}
+
 
 .services__title--container {
     display: flex;
@@ -221,6 +237,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .services__block--container {
@@ -230,15 +247,15 @@ button:hover {
     align-items: center;
     width: 1200px;
     
-    
-    
 }
+
+
 
 
 .service__wrapper {
     display: flex;
     justify-content: space-between;
-    width: calc(100% / 3);
+    max-width: calc(100% / 3);
     margin: 0 16px 0 16px;
     padding: 32px 8px;
  
@@ -249,6 +266,7 @@ button:hover {
 .service__description {
     display: flex;
     flex-direction: column;
+    margin: 16px 8px;
 }
 
 .service__img {
@@ -265,7 +283,7 @@ button:hover {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    border: solid 2px gray;
+    border: solid 2px rgb(226, 232, 240);
     border-radius: 9999px;
     display: flex;
     justify-content: center;
@@ -273,6 +291,20 @@ button:hover {
 }
 
 
+.service__title {
+    color: #243e63;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .4px;
+    line-height: 1;
+}
+
+
+.service__description {
+    font-weight: 500;
+    line-height: 2;
+    color: rgb(124 139 161);
+}
 
 /* QUALITY SECTION */
 
@@ -301,7 +333,7 @@ button:hover {
 
 
 
-/* STEPS SECTION */
+/* ------- STEPS SECTION ------- */
 
 
 
@@ -311,6 +343,10 @@ button:hover {
     padding: 96px 0;
 }
 
+.text__container {
+    margin: auto;
+
+}
 
 .steps__screenshot--section {
     width: 50%;
@@ -320,6 +356,8 @@ button:hover {
 
 .steps__img {
     max-width: 100%;
+    margin: auto;
+  
 }
 
 .steps__description--container {
@@ -327,11 +365,12 @@ button:hover {
     display: flex;
     flex-direction: column;
     
+    
 }
 
 .step__info--container {
     display: flex;
-    justify-content: center;
+    margin: auto;
 
 }
 
@@ -341,13 +380,16 @@ button:hover {
     align-items: center;
     color:  rgb(203 213 224);
     font-size: 36px;
+    font-weight: 600;
 }
 
 .step__info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
     margin: 24px;
     color: #718096;
     text-wrap: wrap;
@@ -359,4 +401,89 @@ button:hover {
     color: #243E63;
     font-size: 20px;
     font-weight: 600;
+}
+
+
+/* ------ VALUES SECTION ------- */
+
+.values__container {
+    display: flex;
+    padding: 96px 0;
+    margin: auto;
+}
+
+
+.values__description--container {
+    width: 50%;
+
+}
+
+.values__img--container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.values__para {
+    margin-top: 32px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7c8ba1;
+}
+
+
+.value__description--container {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.value__title--wrapper {
+ 
+    
+}
+
+
+.value__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 12px;
+    color: #243e63;
+    text-align: left;
+    align-items: center;
+}
+
+
+.value__description--para {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    color: #7c8ba1;
+    font-weight: 500;
+
+}
+
+
+
+.value__img--briefcase {
+    height: 36px;
+    width: 36px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin: auto;
+    color: rgb(155, 44, 44);
+    background-color: rgb(254, 178, 178);
+}
+
+.value__img--dollar {
+    height: 36px;
+    width: 36px;
+    padding: 8px 8px;
+    border-radius: 999px;
+    color: rgb(39, 103, 73);
+    background-color: rgb(154, 230, 180);
+    
 }
