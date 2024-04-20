@@ -194,9 +194,11 @@ button:hover {
     font-weight: 500;
     font-size: 16px;
     border-radius: 50px;
-    color: rgb(226, 232, 240);
-  
     
+}
+
+::placeholder {
+    color: rgb(226, 232, 240);
 }
 
 .header__customers--img {
@@ -287,16 +289,13 @@ button:hover {
 
 .services__block--container {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1024px;
 
-    
 }
-
 
 
 
@@ -571,12 +570,15 @@ button:hover {
     
 }
 
+
+
+
 /* ------ PRICING CONTAINER ----- */
 
-.pricing__container {
-    justify-content: center;
+
+.pricing__section--container {
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
     text-align: center;
     padding: 96px 0;
 }
@@ -591,4 +593,210 @@ button:hover {
     font-weight: 500;
     line-height: 30px;
     color: #7c8ba1;
+}
+
+.pricing__container {
+    align-items: center;
+    width: 100%;
+}
+
+.pricings__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  
+
+}
+
+
+
+
+.pricing__business--top {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    border-bottom: 2px solid rgb(102, 126, 234);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+
+
+.pricing__personal--top,
+.pricing__enterprise--top {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-left: 2px solid rgb(226, 232, 240);
+    border-right: 2px solid rgb(226, 232, 240);
+    border-bottom: 2px solid rgb(226, 232, 240);
+}
+
+
+.enterprise__border--colored {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    height: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.personal__border--colored {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    height: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.pricing__business--wrapper {
+    width: 384px;
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+}
+
+.pricing__personal--wrapper,
+.pricing__enterprise--wrapper {
+    width: 384px;
+}
+
+
+.price__title {
+    font-size: 20px;
+    color: #1A202C;
+    font-weight: 700;
+}
+
+.price__business--title {
+    font-size: 20px;
+    color: rgb(247, 250, 252);
+    font-weight: 700;
+}
+
+.price__amount {
+    font-size: 48px;
+    color: #1a202c;
+    font-weight: 700;
+    line-height: 78px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+.price__business--amount {
+    font-size: 48px;
+    color: rgb(247, 250, 252);
+    font-weight: 700;
+    line-height: 78px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.monthly {
+    font-weight: 700;
+    line-height: 26px;
+    color: #a0aec0;
+}
+
+.monthly__business {
+    font-weight: 700;
+    line-height: 26px;
+    color: rgb(247, 250, 252);
+}
+
+.pricing__personal--middle,
+.pricing__enterprise--middle {
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+    border-left: 2px solid rgb(226, 232, 240);
+    border-right: 2px solid rgb(226, 232, 240);
+    border-bottom: 2px solid rgb(226, 232, 240);
+}
+
+.pricing__business--middle {
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+    border-left: 2px solid rgb(102, 126, 234);
+    border-right: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+
+}
+
+.price__personal--content,
+.price__enterprise--content {
+    color: #718096;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 20px;
+    display: block;
+}
+
+.price__business--content {
+    color: rgb(247, 250, 252);
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 20px;
+    display: block;
+}
+
+.pricing__personal--bottom,
+.pricing__enterprise--bottom {
+    padding: 32px 64px;
+    border-left: 2px solid rgb(226, 232, 240);
+    border-right: 2px solid rgb(226, 232, 240);
+    border-bottom: 2px solid rgb(226, 232, 240);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.pricing__business--bottom {
+    padding: 32px 64px;
+    border-left: 2px solid rgb(102, 126, 234);
+    border-right: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.price__business--for {
+    color: rgb(247, 250, 252);
+}
+
+
+.pricing__personal--btn {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.pricing__enterprise--btn {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.pricing__business--btn {
+    background: rgb(247, 250, 252);
+    color: rgb(102, 126, 234);
+}
+
+
+/* ----- TESTIMONIALS SECTION ----- */
+
+.testimonials__container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials__img--container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials__customer--container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
