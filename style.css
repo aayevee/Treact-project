@@ -6,7 +6,6 @@
 }
 
 section {
-    padding-top: 32px;
     padding-left: 32px;
     padding-right: 32px;
 }
@@ -14,6 +13,7 @@ section {
 .row {
     width: 100%;
     max-width: 1200px;
+    padding: 96px 0;
     margin: 0 auto;
 }
 
@@ -70,19 +70,20 @@ button  {
     color: #f7fafc;
     font-size: 16px;
     font-weight: 700;
-    padding: 12px 24px;
+    padding: 16px 24px;
     border-radius: 9999px;
     border: none;
+    cursor: pointer;
 }
 
 
 
-button:hover {
+.btn__header:hover {
     background-color: rgb(60 13 153);
     color: #f7fafc;
     font-size: 16px;
     font-weight: 700;
-    padding: 12px 24px;
+    padding: 16px 24px;
     border-radius: 9999px;
     border: none;
 }
@@ -98,6 +99,9 @@ button:hover {
     border: none;
 }
 
+.nav__link--primary:hover {
+    background-color: rgb(60 13 153);
+}
 
 
 .logo__container {
@@ -126,6 +130,10 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+ 
 }
 
 
@@ -176,6 +184,7 @@ button:hover {
 .header__container {
     display: flex;
     padding: 96px 0;
+    
 }
 
 
@@ -258,7 +267,6 @@ button:hover {
 
 .title {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -277,7 +285,7 @@ button:hover {
 .services__title--container {
     display: flex;
     text-align: center;
-    padding: 0 96px;
+    padding: 96px 0;
 }
 
 .services__title {
@@ -287,13 +295,11 @@ button:hover {
     
 }
 
-.services__block--container {
+.services__container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    width: 100%;
-    max-width: 1024px;
+    margin: 0 110px;
 
 }
 
@@ -305,6 +311,8 @@ button:hover {
     justify-content: center;
     width: calc(100% / 3);
     padding: 32px 24px;
+
+
   
 }
 
@@ -494,7 +502,7 @@ button:hover {
     margin-top: 32px;
     text-align: left;
     line-height: 30px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: #7c8ba1;
 }
@@ -580,7 +588,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 96px 0;
+
 }
 
 
@@ -602,13 +610,11 @@ button:hover {
 
 .pricings__wrapper {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
   
 
 }
-
-
-
 
 .pricing__business--top {
     padding-top: 36px;
@@ -617,8 +623,6 @@ button:hover {
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
-
-
 
 .pricing__personal--top,
 .pricing__enterprise--top {
@@ -719,8 +723,8 @@ button:hover {
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 32px;
-    border-left: 2px solid rgb(102, 126, 234);
-    border-right: 2px solid rgb(102, 126, 234);
+    /* border-left: 2px solid rgb(102, 126, 234);
+    border-right: 2px solid rgb(102, 126, 234); */
     border-bottom: 2px solid rgb(102, 126, 234);
 
 }
@@ -754,9 +758,9 @@ button:hover {
 
 .pricing__business--bottom {
     padding: 32px 64px;
-    border-left: 2px solid rgb(102, 126, 234);
+    /* border-left: 2px solid rgb(102, 126, 234); */
     border-right: 2px solid rgb(102, 126, 234);
-    border-bottom: 2px solid rgb(102, 126, 234);
+    /* border-bottom: 2px solid rgb(102, 126, 234); */
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -768,35 +772,303 @@ button:hover {
 
 .pricing__personal--btn {
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-    padding-left: 24px;
-    padding-right: 24px;
+    font-size: 14px;
+    padding: 16px 64px;
+    font-weight: 700;
 }
 .pricing__enterprise--btn {
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    font-size: 14px;
+    padding: 16px 64px;
+    font-weight: 700;
 }
 
 .pricing__business--btn {
     background: rgb(247, 250, 252);
     color: rgb(102, 126, 234);
+    font-size: 14px;
+    padding: 16px 64px;
+    font-weight: 700;
 }
 
+
+.pricing__business--btn:hover {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 
 /* ----- TESTIMONIALS SECTION ----- */
 
 .testimonials__container {
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.testimonials__img--container {
+.testimonials__img--wrapper {
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.testimonials__customer--container {
+.testimonials__customer--wrapper {
     width: 50%;
+    text-align: left;
+    padding-left: 64px;
+
+}
+
+.testimonial__description--para {
+    margin: 24px 0;
+    text-align: left;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+}
+
+.testimonial__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+    color: #243e63;
+}
+
+.testimonial__ratings {
+    color: rgb(246 173 85);
+}
+
+.testimonial__customer--para {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #4A5568;
+    margin: 16px 0 32px;
+}
+
+.customer__img {
+    border-radius: 50px;
+    width: 85px;
+    height: 85px;
+    margin-right: 20px;
+}
+
+.customer__name {
+    color: #243e63;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.customer__details {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7c8ba1;
+    align-items: center;
+}
+
+
+.customer__container {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+/* ----- FAQS SECTION ----- */
+
+
+.faqs__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+
+.faqs__para {
+    font-size: 18px;
+    color: #7c8ba1;
+    font-weight: 500;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.faqs__questions--wrapper {
+    margin-top: 48px;
+    width: 896px;
+}
+
+.faqs__question {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.faqs__question--box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    margin-bottom: 24px;
+    background-color: rgba(227, 230, 233, 0.473);
+    border-radius: 8px;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+
+/* --- BANNER SECTION ----- */
+
+
+.getstarted__banner--container {
+    background-color: #6415ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px;
+    border-radius: 8px;
+}
+
+
+.banner__link--start {
+background-color: #F56565;
+color: #f7fafc;
+font-size: 16px;
+font-weight: 700;
+padding: 20px 40px;
+border-radius: 9999px;
+border: 1px solid #f56565;
+}
+
+.banner__link--contact {
+    color: #f7fafc;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 9999px;
+    border: 1px solid #ffffff;
+}
+
+.banner__link--contact:hover {
+    color: #f7fafc;
+    background-color: #6415ff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 9999px;
+    border: 1px solid #ffffff;
+}
+
+.banner__description {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #fff;
+    width: 560px;
+
+}
+
+
+/* ----- FOOTER SECTION ----- */
+
+footer {
+    padding: 78px;
+    background-color: #6415ff;
+}
+
+.footer__links--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin: 96px 0; */
+}
+
+.footer__links--wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+  
+
+}
+
+.footer__link--title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 48px;
+}
+
+.footer__link--1 {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer__link {
+    margin-top: 12px;
+    padding-top: 4px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* ----- FOOTER COPYRIGHT & SOCIAL LINKS ----- */
+
+.footer__divider {
+    margin: 64px 0;
+    border: 1px solid rgb(116 44 255);
+}
+
+.footer__bottom--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.footer__logo {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.footer__logo--img {
+    width: 32px;
+    height: 32px;
+}
+
+.copyright {
+    color: #cbd5e0;
+  
+}
+
+
+.logo__img--wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+ 
+}
+
+.logo__img {
+    width: 16px;
+    height: 16px;
+    padding: 16px 16px;
+    background-color: #fff;
+    border-radius: 999px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease;
+    margin: 16px;
+
 }
