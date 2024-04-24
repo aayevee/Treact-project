@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/978b19ae21.js" crossorigin="anonymous"></script>
-
+        <script src="index.js"></script>
         
     </head>
     
@@ -22,13 +22,13 @@
 <section id="landing">
     <nav>
     <!-- <div class="row"> -->
-        <div class="nav__container">
+    <div class="nav__container">
             <div class="logo__container">
             <img class="logo__img" src="./assets/logo2.svg">
             <a href="#" class="logo__name">Treact</a>
             </div>
             
-            <div class="nav__links--container">
+            <div class="nav__links--wrapper">
             <ul class="nav__links--list">
                 <li><a href="#" class="nav__link--anchor">About</a></li>
                 <li><a href="#" class="nav__link--anchor">Blog</a></li>
@@ -38,9 +38,38 @@
                 <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
             </ul>
             </div>
-        </div>
-        </div>
-    <!-- </div> -->
+    
+    <!-- BURGER MENU -->
+     
+        <button class="btn__menu menu--open" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+            <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+                <li class="menu__list">
+                    <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link--btn" onclick="closeMenu()">Sign Up</a>
+                </li>
+            </ul>
+            </div>
+    </div>
     </nav>
 
 
@@ -69,13 +98,14 @@
 
     
     
+    
     </header>
 </section>
 
 
 <section id="features">
     <div class="services__title--container">
-    <div class="row">
+        <div class="row">
         <h2><span class="text--purple capslock title">Features</span></h2>
             <h1 class="section__title">We have Amazing <span class="text--purple">Service.</span></h1>
             <p class="services__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -445,10 +475,11 @@
 </section>
 
 <footer>
+<div class="footer__section--container">
     <div class="footer__links--container">
 
         <div class="footer__links--wrapper">
-            <h5><a href="" class="capslock footer__link--title">Main</a></h5>
+            <h5 class="capslock footer__link--title">Main</h5>
 
             <a href="" class="footer__link--1">Blog</a>
             <a href="" class="footer__link">FAQs</a>
@@ -457,7 +488,7 @@
         </div>
 
         <div class="footer__links--wrapper">
-            <h5><a href="" class="capslock footer__link--title">Product</a></h5>
+            <h5 class="capslock footer__link--title">Product</h5>
 
             <a href="" class="footer__link--1">Login</a>
             <a href="" class="footer__link">Personal</a>
@@ -466,7 +497,7 @@
         </div>
 
         <div class="footer__links--wrapper">
-            <h5><a href="" class="capslock footer__link--title">Press</a></h5>
+            <h5 class="capslock footer__link--title">Press</h5>
 
             <a href="" class="footer__link--1">Logos</a>
             <a href="" class="footer__link">Events</a>
@@ -475,7 +506,7 @@
         </div>
 
         <div class="footer__links--wrapper">
-            <h5><a href="" class="capslock footer__link--title">Team</a></h5>
+            <h5 class="capslock footer__link--title">Team</h5>
 
             <a href="" class="footer__link--1">Career</a>
             <a href="" class="footer__link">Founders</a>
@@ -485,7 +516,7 @@
 
    
         <div class="footer__links--wrapper">
-            <h5><a href="" class="capslock footer__link--title">Legal</a></h5>
+            <h5 class="capslock footer__link--title">Legal</h5>
 
             <a href="" class="footer__link--1">GDPR</a>
             <a href="" class="footer__link">Privacy Policy</a>
@@ -502,28 +533,29 @@
 <!-- line to divide all links vs copyright and social links -->
 
 
-    <div class="footer__bottom--container">
-        <div class="logo__container">
-            <img class="footer__logo--img" src="./assets/T logo footer.svg">
-            <a href="#" class="footer__logo">Treact Inc.</a>
-        </div>
-        
-
-        <p class="copyright">© 2018 Treact Inc. All Rights Reserved.</p>
-
-        <!-- <div class="footer__social--container"> -->
-
-            <div class="logo__img--wrapper">
-                <i class="logo__img fa-brands fa-facebook-f"></i>
-                <i class="logo__img fa-brands fa-twitter"></i>
-                <i class="logo__img fa-brands fa-youtube"></i>
-
+        <div class="footer__bottom--container">
+            <div class="logo__container">
+                <img class="footer__logo--img" src="./assets/T logo footer.svg">
+                <a href="#" class="footer__logo">Treact Inc.</a>
             </div>
- 
+            
+
+            <p class="copyright">© 2018 Treact Inc. All Rights Reserved.</p>
+
+            <!-- <div class="footer__social--container"> -->
+
+                <div class="logo__img--wrapper">
+                    <i class="social__logo--img fa-brands fa-facebook-f"></i>
+                    <i class="social__logo--img fa-brands fa-twitter"></i>
+                    <i class="social__logo--img fa-brands fa-youtube"></i>
+
+                </div>
+    
+
+        </div>
 
     </div>
-
-
+</div>
 </footer>
 
 
