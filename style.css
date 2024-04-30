@@ -52,12 +52,14 @@ a:after {
     color: #f7fafc;
 }
 
-a:hover nav {
+a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     color: #6415ff;
     
 }
+
+
 
 
 li {
@@ -107,6 +109,8 @@ button  {
 
 .nav__link--primary:hover {
     background-color: rgb(60 13 153);
+    text-decoration: none;
+    color: #f7fafc
 }
 
 
