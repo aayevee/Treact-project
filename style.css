@@ -1166,26 +1166,39 @@ footer {
 
 .logo__img--wrapper {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-
- 
 }
+
+
 
 .social__logo--img {
-    width: 36px;
-    height: 36px;
-    padding: 16px 16px;
-    background-color: #fff;
-    border-radius: 999px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     transition: 500ms ease;
-    margin: 16px;
+    margin: auto;
 
 }
+
+.social__link {
+    color: #1a202c;
+    margin: auto;
+}
+
+.social__facebook--container,
+.social__twitter--container,
+.social__youtube--container {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    background-position: center;
+    border-radius: 999px;
+    margin: 16px;
+}
+
 
 
 /* ----- MEDIA ----- */
